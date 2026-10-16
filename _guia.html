@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Guía de componentes · Talenti (prototipo)</title>
+<link rel="icon" href="assets/brand/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/prototipo.css">
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+
+<div class="proto-bar"><div class="wrap">
+  <div class="proto-bar__info"><span>Prototipo de Talenti</span><span class="proto-bar__face">Cara: Prototipo</span></div>
+  <a class="proto-bar__back" href="index.html">Volver al inicio del prototipo</a>
+</div></div>
+<header class="site-header"><div class="wrap"><a class="logo" href="index.html"><img src="assets/brand/logo-horizontal.svg" alt="Talenti"></a></div></header>
+<main id="contenido" class="main">
+<div class="wrap">
+<div class="page-head"><h1>Guía de componentes</h1><p>Referencia de la base de diseño: <code>assets/css/prototipo.css</code>. Todo color, tipografía y espacio sale de variables (tokens).</p></div>
+<section class="guide-block"><h2>Colores</h2><div class="grid grid--4"><div><div class="swatch" style="background:var(--color-brand-navy)"></div><p class="small" style="margin:4px 0 0">Azul marino<br><code>--color-brand-navy</code></p></div><div><div class="swatch" style="background:var(--color-brand-blue)"></div><p class="small" style="margin:4px 0 0">Azul<br><code>--color-brand-blue</code></p></div><div><div class="swatch" style="background:var(--color-brand-white)"></div><p class="small" style="margin:4px 0 0">Blanco<br><code>--color-brand-white</code></p></div><div><div class="swatch" style="background:var(--color-neutral-200)"></div><p class="small" style="margin:4px 0 0">Neutro<br><code>--color-neutral-200</code></p></div><div><div class="swatch" style="background:var(--color-success)"></div><p class="small" style="margin:4px 0 0">Éxito<br><code>--color-success</code></p></div><div><div class="swatch" style="background:var(--color-warning)"></div><p class="small" style="margin:4px 0 0">Aviso<br><code>--color-warning</code></p></div><div><div class="swatch" style="background:var(--color-danger)"></div><p class="small" style="margin:4px 0 0">Error<br><code>--color-danger</code></p></div><div><div class="swatch" style="background:var(--color-brand-blue-soft)"></div><p class="small" style="margin:4px 0 0">Azul suave<br><code>--color-brand-blue-soft</code></p></div></div></section>
+<section class="guide-block"><h2>Tipografía</h2><h1>Título 1, Bricolage Grotesque</h1><h2>Título 2</h2><h3>Título 3</h3><p>Texto de párrafo en Figtree. <span class="muted">Texto secundario.</span></p></section>
+<section class="guide-block"><h2>Botones</h2><div class="demo"><a class="btn" href="#">Principal</a><a class="btn btn--secondary" href="#">Secundario</a><a class="btn btn--ghost" href="#">Texto</a><a class="btn btn--danger" href="#">Peligro</a><a class="btn btn--sm" href="#">Pequeño</a></div><p class="small muted">Un solo botón principal por pantalla.</p></section>
+<section class="guide-block"><h2>Tarjetas y listas agrupadas</h2><div class="grid grid--3"><div class="card"><h3>Tarjeta</h3><p class="muted">Contenido.</p></div><div class="card card--tint"><h3>Tarjeta tintada</h3><p class="muted">Contenido.</p></div><div class="card card--navy"><h3>Tarjeta marino</h3><p>Contenido.</p></div></div>
+<ul class="group" style="margin-top:16px"><li class="group__item"><div class="grow"><strong>Elemento</strong><small>Detalle</small></div><span class="badge">Nota</span></li><li><a class="group__item" href="#"><div class="grow"><strong>Elemento con enlace</strong><small>Detalle</small></div></a></li></ul></section>
+<section class="guide-block"><h2>Insignias, chips y avatares</h2><div class="demo"><span class="badge">Neutra</span><span class="badge badge--info">Información</span><span class="badge badge--ok">Éxito</span><span class="badge badge--warn">Aviso</span><span class="badge badge--danger">Error</span><span class="badge badge--match">82 % compatible</span><span class="badge badge--ai" title="Contenido generado por inteligencia artificial">IA</span><span class="chip">Java <small>Intermedio</small></span><span class="chip chip--plain">SQL</span><span class="chip chip--on">Activo</span><a class="chip chip--add" href="#">+ Agregar</a><span class="avatar avatar--1" aria-hidden="true">AT</span><span class="avatar avatar--2" aria-hidden="true">ND</span><span class="avatar avatar--3" aria-hidden="true">CD</span></div></section>
+<section class="guide-block"><h2>Avisos y estados</h2><div class="stack"><div class="notice" role="status"><span class="notice__icon " aria-hidden="true">i</span><div><strong>Información</strong><p>Un mensaje neutro.</p></div></div><div class="notice notice--ok" role="status"><span class="notice__icon " aria-hidden="true">✓</span><div><strong>Éxito</strong><p>Se guardó.</p></div></div><div class="notice notice--warn" role="status"><span class="notice__icon " aria-hidden="true">!</span><div><strong>Aviso</strong><p>Revisa esto.</p></div></div><div class="notice notice--danger" role="alert"><span class="notice__icon " aria-hidden="true">!</span><div><strong>Error</strong><p>No se pudo completar.</p></div></div><div class="card stack"><p class="small muted" style="margin:0">Cargando (esqueleto)</p><div class="skeleton"></div><div class="skeleton" style="width:70%"></div></div><div class="card center"><h3>Estado vacío</h3><p class="muted">Aún no hay nada aquí.</p></div></div></section>
+<section class="guide-block"><h2>Formularios</h2><div class="form-grid form-grid--2"><div class="field"><label for="g1">Campo de texto</label><input class="input" id="g1" type="text" value="" placeholder="Escribe aquí" aria-describedby="g1-m" autocomplete="off"><span class="hint" id="g1-m">Texto de ayuda</span></div><div class="field"><label for="g2">Con error</label><input class="input input--error" id="g2" type="text" value="" aria-invalid="true" aria-describedby="g2-m" autocomplete="off"><span class="error-text" id="g2-m">Revisa este dato</span></div><div class="field"><label for="g3">Lista</label><select class="select" id="g3"><option>Uno</option><option>Dos</option></select></div><div class="field"><label for="g4">Texto largo</label><textarea class="textarea" id="g4"></textarea></div><div class="stack"><label class="check"><input type="checkbox" id="g5"><span>Casilla</span></label><label class="check"><input type="radio" id="g6" name="g" checked><span>Opción</span></label></div></div></section>
+<section class="guide-block"><h2>Tabla</h2><div class="table-wrap"><table class="table"><caption>Vacantes de muestra</caption><thead><tr><th scope="col">Vacante</th><th scope="col">Empresa</th><th scope="col">Estado</th></tr></thead><tbody><tr><td>Practicante Backend Java</td><td>Andes Tech</td><td><span class="badge badge--ok">Publicada</span></td></tr><tr><td>Practicante QA</td><td>Quipu Systems</td><td><span class="badge">Borrador</span></td></tr></tbody></table></div></section>
+<section class="guide-block"><h2>Anillo, progreso y línea de etapas</h2><div class="row" style="align-items:flex-start;gap:32px"><div class="ring" style="--p:82"><div class="ring__value">82 %<small>compatible</small></div></div><div class="stack" style="flex:1;min-width:14rem"><div class="progress" style="--p:45"><i></i></div><ol class="stages"><li class="done"><strong>Enviada</strong><span>Detalle</span></li><li class="now"><strong>En revisión</strong><span>Detalle</span></li><li><strong>Decisión</strong><span>Detalle</span></li></ol></div></div></section>
+<section class="guide-block"><h2>Diálogo (hoja desde abajo en móvil)</h2><a class="btn btn--secondary" href="#demo-dialogo">Abrir diálogo</a><p class="small muted">Se abre con <code>:target</code> y se cierra con un enlace a <code>#cerrar</code>.</p></section>
+<section class="guide-block"><h2>Orbe de DORA</h2><div class="stage"><div class="orb-wrap"><div class="orb"></div></div><p class="live-state"><span class="live-dot"></span>DORA te escucha</p></div></section>
+<section class="guide-block" id="panel"><h2>Barra lateral de panel (empresa y administrador)</h2><div class="card" style="padding:0;overflow:hidden"><div class="panel"><nav class="panel__nav" aria-label="Panel"><ul><li><a href="#" aria-current="page">Resumen</a></li><li><a href="#">Vacantes</a></li><li><a href="#">Postulaciones</a></li></ul></nav><div class="panel__content"><h3>Contenido del panel</h3><p class="muted">Aquí va la pantalla.</p></div></div></div><pre class="snippet"><code>&lt;div class=&quot;panel&quot;>
+  &lt;nav class=&quot;panel__nav&quot; aria-label=&quot;Panel&quot;>
+    &lt;ul>&lt;li>&lt;a href=&quot;pagina.html&quot; aria-current=&quot;page&quot;>Resumen&lt;/a>&lt;/li> ...&lt;/ul>
+  &lt;/nav>
+  &lt;div class=&quot;panel__content&quot;> ...contenido... &lt;/div>
+&lt;/div></code></pre></section>
+<section class="guide-block" id="nuevas-paginas"><h2>Cómo añadir páginas</h2><ol>
+<li>Crea un archivo <code>_build/empresa.mjs</code> (o <code>admin.mjs</code>) con <code>import { page, ... } from './lib.mjs'</code>.</li>
+<li>Llama a <code>page({ file: 'empresa/vacantes.html', title, face: 'empresa', header, body })</code>. La barra superior con “Volver al inicio del prototipo” y el pie se añaden solos.</li>
+<li>Importa tu archivo en <code>_build/build.mjs</code> (junto a los de estudiante) y </li>
+<li>Ejecuta <code>node prototipo/_build/build.mjs</code>: regenera todos los .html y el CSS. Las rutas son relativas (<code>../assets</code>).</li>
+<li>Usa solo clases de esta guía y variables <code>var(--...)</code>. Si falta algo, añádelo en <code>_build/css/40-extra.css</code>.</li>
+<li>“Cerrar sesión” debe llevar a <code>../estudiante/index.html</code> (portada pública).</li></ol></section></div>
+</main>
+
+<footer class="site-footer"><div class="wrap">
+  <img src="assets/brand/logo-horizontal-blanco.svg" alt="Talenti">
+  <p>Prácticas preprofesionales para estudiantes de institutos del Perú. Prototipo con datos de muestra.</p>
+  <ul aria-label="Información legal">
+    <li><a href="estudiante/terminos.html">Términos</a></li>
+    <li><a href="estudiante/privacidad.html">Privacidad</a></li>
+    <li><a href="estudiante/cookies.html">Cookies</a></li>
+    <li><a href="estudiante/transparencia.html">Transparencia</a></li>
+    <li><a href="estudiante/cookies.html#preferencias">Preferencias de cookies</a></li>
+  </ul>
+</div></footer>
+<span class="anchor" id="cerrar"></span>
+<div class="dialog" id="demo-dialogo" role="dialog" aria-modal="true" aria-labelledby="demo-dialogo-t"><div class="dialog__panel"><h2 id="demo-dialogo-t">Título del diálogo</h2><p class="muted">Texto breve. Un solo botón principal.</p><div class="dialog__actions"><a class="btn btn--secondary" href="#cerrar">Cancelar</a><a class="btn" href="#cerrar">Aceptar</a></div></div></div>
+</body>
+</html>

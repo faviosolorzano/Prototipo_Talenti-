@@ -1,23 +1,51 @@
 <!doctype html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Prototipo navegable de Talenti para conectar estudiantes de programación con prácticas preprofesionales.">
-  <title>Talenti | Tu código demuestra tu talento</title>
-  <link rel="stylesheet" href="styles.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Inicio del prototipo · Talenti (prototipo)</title>
+<link rel="icon" href="assets/brand/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/prototipo.css">
 </head>
 <body>
-  <a class="skip-link" href="#main">Saltar al contenido</a>
-  <header class="topbar" id="topbar"></header>
+<a class="skip" href="#contenido">Saltar al contenido</a>
 
-  <main id="main" tabindex="-1"></main>
+<header class="site-header"><div class="wrap"><a class="logo" href="index.html"><img src="assets/brand/logo-horizontal.svg" alt="Talenti"></a><span class="badge badge--info" style="margin-left:auto">Prototipo estático</span></div></header>
+<main id="contenido">
 
-  <div class="modal-backdrop" id="modalBackdrop" hidden>
-    <section class="modal" id="modalContent" role="dialog" aria-modal="true" aria-labelledby="modalTitle"></section>
+<section class="hero"><div class="wrap"><div>
+  <p class="eyebrow">Prototipo al 100 %</p>
+  <h1>Recorre Talenti <em>sin instalar nada</em></h1>
+  <p class="lead">Un Figma hecho en HTML: las tres caras (estudiante, empresa y administrador), con todas sus pantallas con datos de muestra. Nada se guarda ni se calcula; los botones solo te llevan a la siguiente pantalla.</p>
+</div><div class="card stack"><h2>Elige por dónde entrar</h2>
+  <a class="btn btn--block" href="estudiante/index.html">Soy estudiante</a>
+  <a class="btn btn--secondary btn--block" href="empresa/index.html">Soy empresa</a>
+  <a class="btn btn--secondary btn--block" href="admin/index.html">Soy administrador</a></div></div></section>
+<section class="section"><div class="wrap">
+  <h2 class="section__title">Cómo recorrerlo</h2>
+  <div class="grid grid--3" style="margin-top:var(--space-6)">
+    <div class="card"><div class="num">1</div><h3>Empieza en la portada</h3><p class="muted">Como visitante verás la portada pública, las oportunidades y el registro.</p></div>
+    <div class="card"><div class="num">2</div><h3>Inicia sesión</h3><p class="muted">Elige un rol y pulsa Ingresar. Es solo navegación: no hay validación.</p></div>
+    <div class="card"><div class="num">3</div><h3>Vuelve cuando quieras</h3><p class="muted">Cada pantalla tiene arriba “Volver al inicio del prototipo”.</p></div>
   </div>
+</div></section>
+<section class="section section--white"><div class="wrap"><h2 class="section__title">Mapa de pantallas</h2><p class="muted">Datos ficticios. <a href="_guia.html">Guía de componentes</a></p>
+  <div class="grid grid--3 map" style="margin-top:var(--space-6)"><div class="card"><h3>Estudiante: visitante</h3><ul><li><a href="estudiante/index.html">Portada<span>index.html</span></a></li><li><a href="estudiante/oportunidades-publico.html">Oportunidades<span>oportunidades-publico.html</span></a></li><li><a href="estudiante/vacante-publico-backend-java.html">Practicante Backend Java<span>vacante-publico-backend-java.html</span></a></li><li><a href="estudiante/vacante-publico-react-typescript.html">Practicante React y TypeScript<span>vacante-publico-react-typescript.html</span></a></li><li><a href="estudiante/vacante-publico-datos-sql.html">Practicante de Datos con SQL<span>vacante-publico-datos-sql.html</span></a></li><li><a href="estudiante/vacante-publico-nube.html">Practicante de Infraestructura en la nube<span>vacante-publico-nube.html</span></a></li><li><a href="estudiante/vacante-publico-qa.html">Practicante QA y automatización<span>vacante-publico-qa.html</span></a></li><li><a href="estudiante/registro.html">Crear cuenta<span>registro.html</span></a></li><li><a href="estudiante/mi-privacidad-info.html">Qué datos usamos<span>mi-privacidad-info.html</span></a></li><li><a href="estudiante/ingreso.html">Iniciar sesión<span>ingreso.html</span></a></li><li><a href="estudiante/ingreso-empresa.html">Iniciar sesión<span>ingreso-empresa.html</span></a></li><li><a href="estudiante/ingreso-ayuda.html">Recuperar contraseña<span>ingreso-ayuda.html</span></a></li><li><a href="estudiante/registro-empresa.html">Solicitar alta de empresa<span>registro-empresa.html</span></a></li><li><a href="estudiante/registro-empresa-enviado.html">Solicitud enviada<span>registro-empresa-enviado.html</span></a></li><li><a href="estudiante/terminos.html">Términos y condiciones<span>terminos.html</span></a></li><li><a href="estudiante/privacidad.html">Política de privacidad<span>privacidad.html</span></a></li><li><a href="estudiante/cookies.html">Política de cookies<span>cookies.html</span></a></li><li><a href="estudiante/transparencia.html">Transparencia<span>transparencia.html</span></a></li></ul></div><div class="card"><h3>Estudiante: con sesión</h3><ul><li><a href="estudiante/inicio.html">Inicio<span>inicio.html</span></a></li><li><a href="estudiante/oportunidades.html">Oportunidades<span>oportunidades.html</span></a></li><li><a href="estudiante/oportunidades-para-ti.html">Para ti<span>oportunidades-para-ti.html</span></a></li><li><a href="estudiante/vacante-backend-java.html">Practicante Backend Java<span>vacante-backend-java.html</span></a></li><li><a href="estudiante/vacante-react-typescript.html">Practicante React y TypeScript<span>vacante-react-typescript.html</span></a></li><li><a href="estudiante/vacante-datos-sql.html">Practicante de Datos con SQL<span>vacante-datos-sql.html</span></a></li><li><a href="estudiante/vacante-nube.html">Practicante de Infraestructura en la nube<span>vacante-nube.html</span></a></li><li><a href="estudiante/vacante-qa.html">Practicante QA y automatización<span>vacante-qa.html</span></a></li><li><a href="estudiante/postulacion-enviada.html">Postulación enviada<span>postulacion-enviada.html</span></a></li><li><a href="estudiante/postulaciones.html">Mis postulaciones<span>postulaciones.html</span></a></li><li><a href="estudiante/postulaciones-vacio.html">Mis postulaciones<span>postulaciones-vacio.html</span></a></li><li><a href="estudiante/postulacion-1.html">Practicante Backend Java<span>postulacion-1.html</span></a></li><li><a href="estudiante/postulacion-2.html">Practicante React y TypeScript<span>postulacion-2.html</span></a></li><li><a href="estudiante/postulacion-3.html">Practicante de Datos con SQL<span>postulacion-3.html</span></a></li><li><a href="estudiante/postulacion-retirada.html">Postulación retirada<span>postulacion-retirada.html</span></a></li><li><a href="estudiante/perfil.html">Mi perfil<span>perfil.html</span></a></li><li><a href="estudiante/cv.html">Subir CV<span>cv.html</span></a></li><li><a href="estudiante/cv-analizando.html">Analizando CV<span>cv-analizando.html</span></a></li><li><a href="estudiante/cv-revision.html">Revisión de sugerencias<span>cv-revision.html</span></a></li><li><a href="estudiante/cv-resultado.html">CV leído<span>cv-resultado.html</span></a></li><li><a href="estudiante/cv-limite.html">Límite alcanzado<span>cv-limite.html</span></a></li><li><a href="estudiante/dora.html">DORA<span>dora.html</span></a></li><li><a href="estudiante/dora-configurar.html">Configurar sesión<span>dora-configurar.html</span></a></li><li><a href="estudiante/dora-voz.html">Sesión de práctica por voz<span>dora-voz.html</span></a></li><li><a href="estudiante/dora-voz-habla.html">Sesión de práctica por voz<span>dora-voz-habla.html</span></a></li><li><a href="estudiante/dora-feedback.html">Retroalimentación<span>dora-feedback.html</span></a></li><li><a href="estudiante/examen.html">Examen técnico<span>examen.html</span></a></li><li><a href="estudiante/examen-resultado.html">Resultado del examen<span>examen-resultado.html</span></a></li><li><a href="estudiante/entrevista.html">Entrevista evaluada<span>entrevista.html</span></a></li><li><a href="estudiante/entrevista-dora.html">Entrevista en curso<span>entrevista-dora.html</span></a></li><li><a href="estudiante/entrevista-resultado.html">Resultado de la entrevista<span>entrevista-resultado.html</span></a></li><li><a href="estudiante/cuenta.html">Mi cuenta<span>cuenta.html</span></a></li><li><a href="estudiante/cuenta-guardada.html">Contraseña cambiada<span>cuenta-guardada.html</span></a></li><li><a href="estudiante/mi-privacidad.html">Mi privacidad<span>mi-privacidad.html</span></a></li><li><a href="estudiante/descarga-datos.html">Descarga lista<span>descarga-datos.html</span></a></li><li><a href="estudiante/cuenta-eliminada.html">Cuenta eliminada<span>cuenta-eliminada.html</span></a></li><li><a href="estudiante/sesiones.html">Sesiones de práctica<span>sesiones.html</span></a></li></ul></div><div class="card"><h3>Empresa <span class="badge">57 pantallas</span></h3><ul><li><a href="empresa/index.html">Panel de inicio<span>index.html</span></a></li><li><a href="empresa/perfil.html">Mi perfil de empresa<span>perfil.html</span></a></li><li><a href="empresa/vacantes.html">Mis vacantes<span>vacantes.html</span></a></li><li><a href="empresa/postulantes.html">Postulantes<span>postulantes.html</span></a></li><li><a href="empresa/resultados.html">Resultados<span>resultados.html</span></a></li><li><a href="empresa/informes.html">Informes<span>informes.html</span></a></li><li><a href="empresa/cuenta.html">Cuenta de la empresa<span>cuenta.html</span></a></li></ul><p class="small muted" style="margin:8px 0 0">Pantallas principales. Desde cada una llegas al resto.</p></div><div class="card"><h3>Administrador <span class="badge">45 pantallas</span></h3><ul><li><a href="admin/index.html">Panel general<span>index.html</span></a></li><li><a href="admin/usuarios.html">Usuarios<span>usuarios.html</span></a></li><li><a href="admin/empresas.html">Empresas<span>empresas.html</span></a></li><li><a href="admin/vacantes.html">Vacantes<span>vacantes.html</span></a></li><li><a href="admin/planes.html">Planes y suscripciones<span>planes.html</span></a></li><li><a href="admin/consumo-ia.html">Consumo de IA<span>consumo-ia.html</span></a></li><li><a href="admin/legales.html">Documentos legales<span>legales.html</span></a></li><li><a href="admin/auditoria.html">Auditoría<span>auditoria.html</span></a></li><li><a href="admin/incidencias.html">Incidencias y soporte<span>incidencias.html</span></a></li><li><a href="admin/config.html">Configuración<span>config.html</span></a></li></ul><p class="small muted" style="margin:8px 0 0">Pantallas principales. Desde cada una llegas al resto.</p></div></div>
+</div></section>
+</main>
 
-  <div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <script src="app.js"></script>
+<footer class="site-footer"><div class="wrap">
+  <img src="assets/brand/logo-horizontal-blanco.svg" alt="Talenti">
+  <p>Prácticas preprofesionales para estudiantes de institutos del Perú. Prototipo con datos de muestra.</p>
+  <ul aria-label="Información legal">
+    <li><a href="estudiante/terminos.html">Términos</a></li>
+    <li><a href="estudiante/privacidad.html">Privacidad</a></li>
+    <li><a href="estudiante/cookies.html">Cookies</a></li>
+    <li><a href="estudiante/transparencia.html">Transparencia</a></li>
+    <li><a href="estudiante/cookies.html#preferencias">Preferencias de cookies</a></li>
+  </ul>
+</div></footer>
+<span class="anchor" id="cerrar"></span>
+
 </body>
 </html>

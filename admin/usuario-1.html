@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Camila Rojas · Talenti (prototipo)</title>
+<link rel="icon" href="../assets/brand/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/css/prototipo.css">
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+
+<div class="proto-bar"><div class="wrap">
+  <div class="proto-bar__info"><span>Prototipo de Talenti</span><span class="proto-bar__face">Cara: Administrador</span><span>Con sesión: Administración Talenti</span></div>
+  <a class="proto-bar__back" href="../index.html">Volver al inicio del prototipo</a>
+</div></div>
+<header class="site-header"><div class="wrap">
+  <a class="logo" href="index.html" aria-label="Talenti, ir al panel"><img src="../assets/brand/logo-horizontal.svg" alt="Talenti"></a>
+  <span class="badge badge--info adm-who" style="margin-left:auto">Administración Talenti</span>
+  <a class="btn btn--secondary btn--sm adm-out" href="../estudiante/index.html">Cerrar sesión</a>
+</div></header>
+<main id="contenido">
+<div class="panel"><nav class="panel__nav" aria-label="Administración"><ul><li><a href="index.html">Panel</a></li><li><a href="usuarios.html" aria-current="page">Usuarios</a></li><li><a href="empresas.html">Empresas</a></li><li><a href="vacantes.html">Vacantes</a></li><li><a href="planes.html">Planes</a></li><li><a href="consumo-ia.html">Consumo de IA</a></li><li><a href="legales.html">Documentos legales</a></li><li><a href="auditoria.html">Auditoría y seguridad</a></li><li><a href="incidencias.html">Incidencias</a></li><li><a href="config.html">Configuración</a></li></ul></nav><div class="panel__content">
+<p class="crumbs"><a href="usuarios.html">‹ Volver a usuarios</a></p>
+<div class="row" style="flex-wrap:nowrap;margin-bottom:var(--space-6)"><span class="avatar avatar--2" aria-hidden="true">CR</span><div><h1 style="margin:0">Camila Rojas</h1><p class="muted" style="margin:0">camila.rojas@ejemplo.pe</p></div></div>
+<div class="stack-lg">
+  <div><span class="badge badge--ok">Activa</span></div>
+  <dl class="facts"><div><dt>Instituto</dt><dd>TECSUP</dd></div><div><dt>Registro</dt><dd>Mar 2026</dd></div><div><dt>Último ingreso</dt><dd>Hoy</dd></div><div><dt>Rol</dt><dd>Estudiante</dd></div></dl>
+  <div class="notice" role="note"><span class="notice__icon" aria-hidden="true">i</span><div><strong>Contenido privado</strong><p>El perfil completo, el CV y las sesiones de práctica con DORA son privados. El administrador no puede verlos.</p></div></div>
+  <details class="plain"><summary>Consentimientos aceptados</summary><ul class="ticks" style="margin-top:8px"><li><span class="tick tick--ok" aria-hidden="true">✓</span>Términos 1.2</li><li><span class="tick tick--ok" aria-hidden="true">✓</span>Privacidad 1.2</li><li><span class="tick tick--ok" aria-hidden="true">✓</span>Cookies 1.1</li></ul></details>
+  <div class="adm-actions"><a class="btn" href="#suspender">Suspender cuenta</a><a class="btn btn--ghost" href="auditoria.html">Ver auditoría</a></div>
+</div></div></div>
+</main>
+
+<footer class="site-footer"><div class="wrap">
+  <img src="../assets/brand/logo-horizontal-blanco.svg" alt="Talenti">
+  <p>Prácticas preprofesionales para estudiantes de institutos del Perú. Prototipo con datos de muestra.</p>
+  <ul aria-label="Información legal">
+    <li><a href="../estudiante/terminos.html">Términos</a></li>
+    <li><a href="../estudiante/privacidad.html">Privacidad</a></li>
+    <li><a href="../estudiante/cookies.html">Cookies</a></li>
+    <li><a href="../estudiante/transparencia.html">Transparencia</a></li>
+    <li><a href="../estudiante/cookies.html#preferencias">Preferencias de cookies</a></li>
+  </ul>
+</div></footer>
+<span class="anchor" id="cerrar"></span>
+<div class="dialog" id="suspender" role="dialog" aria-modal="true" aria-labelledby="suspender-t"><div class="dialog__panel"><h2 id="suspender-t">Suspender cuenta</h2><p class="muted">Camila Rojas no podrá ingresar hasta que la reactives. Se guarda en la auditoría.</p><div class="field"><label for="motivo-u">Motivo</label><select class="select" id="motivo-u"><option>Uso indebido</option><option>Suplantación</option><option>A pedido de la persona</option></select></div><div class="dialog__actions"><a class="btn btn--secondary" href="#cerrar">Cancelar</a><a class="btn btn--danger" href="usuarios.html">Suspender</a></div></div></div>
+</body>
+</html>

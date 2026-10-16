@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Seguridad · Talenti (prototipo)</title>
+<link rel="icon" href="../assets/brand/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/css/prototipo.css">
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+
+<div class="proto-bar"><div class="wrap">
+  <div class="proto-bar__info"><span>Prototipo de Talenti</span><span class="proto-bar__face">Cara: Administrador</span><span>Con sesión: Administración Talenti</span></div>
+  <a class="proto-bar__back" href="../index.html">Volver al inicio del prototipo</a>
+</div></div>
+<header class="site-header"><div class="wrap">
+  <a class="logo" href="index.html" aria-label="Talenti, ir al panel"><img src="../assets/brand/logo-horizontal.svg" alt="Talenti"></a>
+  <span class="badge badge--info adm-who" style="margin-left:auto">Administración Talenti</span>
+  <a class="btn btn--secondary btn--sm adm-out" href="../estudiante/index.html">Cerrar sesión</a>
+</div></header>
+<main id="contenido">
+<div class="panel"><nav class="panel__nav" aria-label="Administración"><ul><li><a href="index.html">Panel</a></li><li><a href="usuarios.html">Usuarios</a></li><li><a href="empresas.html">Empresas</a></li><li><a href="vacantes.html">Vacantes</a></li><li><a href="planes.html">Planes</a></li><li><a href="consumo-ia.html">Consumo de IA</a></li><li><a href="legales.html">Documentos legales</a></li><li><a href="auditoria.html" aria-current="page">Auditoría y seguridad</a></li><li><a href="incidencias.html">Incidencias</a></li><li><a href="config.html">Configuración</a></li></ul></nav><div class="panel__content">
+<div class="adm-head"><div><h1>Auditoría y seguridad</h1><p>Ingresos fallidos y bloqueos.</p></div></div><div class="segmented" role="navigation" aria-label="Vista" style="margin-bottom:var(--space-6);max-width:100%;overflow-x:auto"><a href="auditoria.html">Registro</a><a href="seguridad.html" aria-current="page">Seguridad</a></div>
+<div class="adm-stats" style="margin-bottom:var(--space-6)"><div class="adm-stat"><span>Intentos fallidos</span><b>3</b><small>últimas 24 h</small></div><div class="adm-stat"><span>Bloqueos activos</span><b>1</b><small>se liberan solos</small></div></div>
+<ul class="group"><li class="group__item"><div class="grow"><strong>Intento fallido</strong><small>camila.rojas@ejemplo.pe · hoy 07:58</small></div><span class="badge badge--warn">Clave incorrecta</span></li><li class="group__item"><div class="grow"><strong>Intento fallido</strong><small>desconocido@ejemplo.pe · hoy 03:12</small></div><span class="badge">No existe</span></li><li><a class="group__item" href="usuario-2.html"><div class="grow"><strong>Bloqueo temporal</strong><small>diego.paredes@ejemplo.pe · hoy 02:30 · 15 min</small></div><span class="badge badge--danger">Activo</span></a></li></ul>
+<p class="small muted" style="margin-top:var(--space-4)">Tras 5 intentos fallidos se bloquea el ingreso por 15 minutos.</p></div></div>
+</main>
+
+<footer class="site-footer"><div class="wrap">
+  <img src="../assets/brand/logo-horizontal-blanco.svg" alt="Talenti">
+  <p>Prácticas preprofesionales para estudiantes de institutos del Perú. Prototipo con datos de muestra.</p>
+  <ul aria-label="Información legal">
+    <li><a href="../estudiante/terminos.html">Términos</a></li>
+    <li><a href="../estudiante/privacidad.html">Privacidad</a></li>
+    <li><a href="../estudiante/cookies.html">Cookies</a></li>
+    <li><a href="../estudiante/transparencia.html">Transparencia</a></li>
+    <li><a href="../estudiante/cookies.html#preferencias">Preferencias de cookies</a></li>
+  </ul>
+</div></footer>
+<span class="anchor" id="cerrar"></span>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Configurar sesión · Talenti (prototipo)</title>
+<link rel="icon" href="../assets/brand/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/css/prototipo.css">
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+
+<div class="proto-bar"><div class="wrap">
+  <div class="proto-bar__info"><span>Prototipo de Talenti</span><span class="proto-bar__face">Cara: Estudiante</span><span>Con sesión: Camila Rojas</span></div>
+  <a class="proto-bar__back" href="../index.html">Volver al inicio del prototipo</a>
+</div></div>
+<header class="site-header session-header"><div class="wrap">
+  <a class="logo" href="inicio.html" aria-label="Talenti, ir al inicio"><img src="../assets/brand/logo-horizontal.svg" alt="Talenti"></a>
+  <details class="user-menu"><summary><span class="avatar avatar--sm avatar--round avatar--2" aria-hidden="true">CR</span><span class="user-menu__name">Camila Rojas</span><span aria-hidden="true">▾</span></summary>
+  <ul><li><a href="cuenta.html">Mi cuenta</a></li><li><a href="mi-privacidad.html">Mi privacidad</a></li><li><a href="sesiones.html">Sesiones de práctica</a></li><li><a href="index.html">Cerrar sesión</a></li></ul></details>
+  <input class="nav-toggle" type="checkbox" id="menu" aria-label="Abrir el menú"><label class="nav-burger" for="menu">Menú</label>
+  <nav class="site-nav" aria-label="Principal"><a href="inicio.html">Inicio</a><a href="oportunidades.html">Oportunidades</a><a href="postulaciones.html">Mis postulaciones</a><a href="dora.html" aria-current="page">DORA</a><a href="perfil.html">Mi perfil</a></nav>
+</div></header>
+<main id="contenido" class="main">
+<div class="wrap"><p class="crumbs"><a href="dora.html">‹ DORA</a></p>
+<div class="narrow-card stack"><div class="row"><span class="badge badge--ai" title="Contenido generado por inteligencia artificial">IA</span></div><h1>Configura tu sesión de práctica</h1>
+<form class="stack" action="dora-voz.html">
+<div class="field"><label for="vac">Vacante de referencia</label><select class="select" id="vac"><option selected>Practicante Backend Java · Andes Tech</option><option>Practicante React y TypeScript · Nodo Digital</option><option>Sin vacante (práctica general)</option></select></div>
+<fieldset style="border:0;padding:0;margin:0" class="stack"><legend class="label" style="font-weight:600;margin-bottom:8px">Duración</legend><label class="check"><input type="radio" id="d5" name="dur"><span>5 minutos</span></label><label class="check"><input type="radio" id="d10" name="dur" checked><span>10 minutos</span></label><label class="check"><input type="radio" id="d15" name="dur"><span>15 minutos</span></label></fieldset>
+<div class="notice" role="status"><span class="notice__icon " aria-hidden="true">i</span><div><strong>Usaremos tu micrófono</strong><p>Tu navegador te pedirá permiso. La sesión es privada.</p></div></div>
+<button class="btn btn--block" type="submit">Empezar sesión de práctica</button></form></div></div>
+</main>
+
+<footer class="site-footer"><div class="wrap">
+  <img src="../assets/brand/logo-horizontal-blanco.svg" alt="Talenti">
+  <p>Prácticas preprofesionales para estudiantes de institutos del Perú. Prototipo con datos de muestra.</p>
+  <ul aria-label="Información legal">
+    <li><a href="../estudiante/terminos.html">Términos</a></li>
+    <li><a href="../estudiante/privacidad.html">Privacidad</a></li>
+    <li><a href="../estudiante/cookies.html">Cookies</a></li>
+    <li><a href="../estudiante/transparencia.html">Transparencia</a></li>
+    <li><a href="../estudiante/cookies.html#preferencias">Preferencias de cookies</a></li>
+  </ul>
+</div></footer>
+<span class="anchor" id="cerrar"></span>
+
+</body>
+</html>

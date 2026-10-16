@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Oportunidades · Talenti (prototipo)</title>
+<link rel="icon" href="../assets/brand/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/css/prototipo.css">
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+
+<div class="proto-bar"><div class="wrap">
+  <div class="proto-bar__info"><span>Prototipo de Talenti</span><span class="proto-bar__face">Cara: Estudiante</span><span>Visitante (sin sesión)</span></div>
+  <a class="proto-bar__back" href="../index.html">Volver al inicio del prototipo</a>
+</div></div>
+<header class="site-header"><div class="wrap">
+  <a class="logo" href="index.html" aria-label="Talenti, ir al inicio"><img src="../assets/brand/logo-horizontal.svg" alt="Talenti"></a>
+  <input class="nav-toggle" type="checkbox" id="menu" aria-label="Abrir el menú"><label class="nav-burger" for="menu">Menú</label>
+  <nav class="site-nav" aria-label="Principal"><a href="index.html">Inicio</a><a href="oportunidades-publico.html" aria-current="page">Oportunidades</a><a href="transparencia.html">Transparencia</a><div class="site-nav__actions"><a class="btn btn--ghost" href="registro.html">Crear cuenta</a><a class="btn btn--secondary" href="ingreso.html">Iniciar sesión</a></div></nav>
+</div></header>
+<main id="contenido" class="main">
+<div class="wrap">
+<div class="page-head"><h1>Oportunidades</h1><p>Vacantes de práctica preprofesional. <a href="ingreso.html">Inicia sesión</a> para ver tu compatibilidad.</p></div>
+<div class="catalog">
+  <aside class="card filters-desktop" aria-label="Filtros"><h2>Filtros</h2><form class="filters" action="oportunidades-publico.html" aria-label="Filtrar vacantes">
+  <div class="field"><label for="d-q">Buscar</label><input class="input" id="d-q" type="search" placeholder="Cargo, empresa o habilidad"></div>
+  <div class="field"><label for="d-c">Ciudad</label><select class="select" id="d-c"><option>Todas</option><option>Lima</option><option>Arequipa</option><option>Remoto</option></select></div>
+  <fieldset><legend>Modalidad</legend>
+    <label class="check"><input type="checkbox" checked><span>Remoto</span></label>
+    <label class="check"><input type="checkbox" checked><span>Híbrido</span></label>
+    <label class="check"><input type="checkbox"><span>Presencial</span></label></fieldset>
+  <fieldset><legend>Duración</legend>
+    <label class="check"><input type="radio" name="d-d" checked><span>Cualquiera</span></label>
+    <label class="check"><input type="radio" name="d-d"><span>Hasta 4 meses</span></label>
+    <label class="check"><input type="radio" name="d-d"><span>5 meses o más</span></label></fieldset>
+  <button class="btn" type="submit">Aplicar filtros</button>
+</form></aside>
+  <div class="stack">
+    <details class="acc filters-mobile"><summary><h2>Filtros</h2></summary><div class="acc__body"><form class="filters" action="oportunidades-publico.html" aria-label="Filtrar vacantes">
+  <div class="field"><label for="m-q">Buscar</label><input class="input" id="m-q" type="search" placeholder="Cargo, empresa o habilidad"></div>
+  <div class="field"><label for="m-c">Ciudad</label><select class="select" id="m-c"><option>Todas</option><option>Lima</option><option>Arequipa</option><option>Remoto</option></select></div>
+  <fieldset><legend>Modalidad</legend>
+    <label class="check"><input type="checkbox" checked><span>Remoto</span></label>
+    <label class="check"><input type="checkbox" checked><span>Híbrido</span></label>
+    <label class="check"><input type="checkbox"><span>Presencial</span></label></fieldset>
+  <fieldset><legend>Duración</legend>
+    <label class="check"><input type="radio" name="m-d" checked><span>Cualquiera</span></label>
+    <label class="check"><input type="radio" name="m-d"><span>Hasta 4 meses</span></label>
+    <label class="check"><input type="radio" name="m-d"><span>5 meses o más</span></label></fieldset>
+  <button class="btn" type="submit">Aplicar filtros</button>
+</form></div></details>
+    <p class="muted small" role="status">Mostrando 5 vacantes de muestra</p>
+    <a class="card card--flat card--link vacancy" href="vacante-publico-backend-java.html">
+  <span class="avatar avatar--1" aria-hidden="true">AT</span>
+  <div><h3>Practicante Backend Java</h3><p class="muted small">Andes Tech</p></div>
+  
+  <div class="vacancy__meta"><span class="badge">Lima</span><span class="badge">Híbrido</span><span class="badge">6 meses</span><span class="small muted">Hace 2 días</span></div>
+</a>
+<a class="card card--flat card--link vacancy" href="vacante-publico-react-typescript.html">
+  <span class="avatar avatar--2" aria-hidden="true">ND</span>
+  <div><h3>Practicante React y TypeScript</h3><p class="muted small">Nodo Digital</p></div>
+  
+  <div class="vacancy__meta"><span class="badge">Remoto</span><span class="badge">Remoto</span><span class="badge">4 meses</span><span class="small muted">Hace 4 días</span></div>
+</a>
+<a class="card card--flat card--link vacancy" href="vacante-publico-datos-sql.html">
+  <span class="avatar avatar--3" aria-hidden="true">CD</span>
+  <div><h3>Practicante de Datos con SQL</h3><p class="muted small">Cóndor Datos</p></div>
+  
+  <div class="vacancy__meta"><span class="badge">Lima</span><span class="badge">Presencial</span><span class="badge">6 meses</span><span class="small muted">Hace 1 semana</span></div>
+</a>
+<a class="card card--flat card--link vacancy" href="vacante-publico-nube.html">
+  <span class="avatar avatar--1" aria-hidden="true">UC</span>
+  <div><h3>Practicante de Infraestructura en la nube</h3><p class="muted small">Urpi Cloud</p></div>
+  
+  <div class="vacancy__meta"><span class="badge">Arequipa</span><span class="badge">Remoto</span><span class="badge">4 meses</span><span class="small muted">Hace 1 semana</span></div>
+</a>
+<a class="card card--flat card--link vacancy" href="vacante-publico-qa.html">
+  <span class="avatar avatar--2" aria-hidden="true">QS</span>
+  <div><h3>Practicante QA y automatización</h3><p class="muted small">Quipu Systems</p></div>
+  
+  <div class="vacancy__meta"><span class="badge">Lima</span><span class="badge">Híbrido</span><span class="badge">5 meses</span><span class="small muted">Hace 2 semanas</span></div>
+</a>
+    <nav class="pagination" aria-label="Paginación"><a class="btn btn--secondary btn--sm" href="oportunidades-publico.html">Anterior</a><a class="btn btn--sm" href="oportunidades-publico.html" aria-current="page">1</a><a class="btn btn--secondary btn--sm" href="oportunidades-publico.html">2</a><a class="btn btn--secondary btn--sm" href="oportunidades-publico.html">Siguiente</a></nav>
+  </div>
+</div></div>
+</main>
+
+<footer class="site-footer"><div class="wrap">
+  <img src="../assets/brand/logo-horizontal-blanco.svg" alt="Talenti">
+  <p>Prácticas preprofesionales para estudiantes de institutos del Perú. Prototipo con datos de muestra.</p>
+  <ul aria-label="Información legal">
+    <li><a href="../estudiante/terminos.html">Términos</a></li>
+    <li><a href="../estudiante/privacidad.html">Privacidad</a></li>
+    <li><a href="../estudiante/cookies.html">Cookies</a></li>
+    <li><a href="../estudiante/transparencia.html">Transparencia</a></li>
+    <li><a href="../estudiante/cookies.html#preferencias">Preferencias de cookies</a></li>
+  </ul>
+</div></footer>
+<span class="anchor" id="cerrar"></span>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Editar vacante · Talenti (prototipo)</title>
+<link rel="icon" href="../assets/brand/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/css/prototipo.css">
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+
+<div class="proto-bar"><div class="wrap">
+  <div class="proto-bar__info"><span>Prototipo de Talenti</span><span class="proto-bar__face">Cara: Empresa</span><span>Sesión de muestra: Andes Tech</span></div>
+  <a class="proto-bar__back" href="../index.html">Volver al inicio del prototipo</a>
+</div></div>
+<header class="site-header session-header"><div class="wrap">
+  <a class="logo" href="index.html" aria-label="Talenti, ir al inicio del panel"><img src="../assets/brand/logo-horizontal.svg" alt="Talenti"></a>
+  <details class="user-menu"><summary><span class="avatar avatar--sm avatar--round avatar--1" aria-hidden="true">AT</span><span class="user-menu__name">Andes Tech</span><span aria-hidden="true">▾</span></summary>
+  <ul><li><a href="perfil.html">Mi perfil de empresa</a></li><li><a href="cuenta.html">Cuenta</a></li><li><a href="../estudiante/index.html">Cerrar sesión</a></li></ul></details>
+</div></header>
+<main id="contenido">
+<div class="panel"><nav class="panel__nav" aria-label="Panel de la empresa"><ul><li><a href="index.html">Inicio</a></li><li><a href="perfil.html">Mi perfil</a></li><li><a href="vacantes.html" aria-current="page">Vacantes</a></li><li><a href="postulantes.html">Postulantes</a></li><li><a href="resultados.html">Resultados</a></li><li><a href="informes.html">Informes</a></li><li><a href="cuenta.html">Cuenta</a></li></ul></nav><div class="panel__content"><div class="emp-col"><p class="crumbs"><a href="vacante-editar-1.html">‹ Volver a el paso anterior</a></p>
+<div class="emp-steps"><p>Paso 2 de 4</p><div class="progress" role="progressbar" aria-label="Avance" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="--p:50"><i></i></div></div>
+<div class="page-head" style="margin:0"><h1>Requisitos</h1></div>
+<section class="card stack"><h2>Obligatorios</h2><p class="muted small" style="margin:0">Sin esto, la persona no encaja.</p>
+<div class="chips"><span class="chip">Java <small>Intermedio</small></span><span class="chip">SQL <small>Básico</small></span><a class="chip chip--add" href="#add1">+ Agregar</a></div></section>
+<section class="card stack"><h2>Deseables</h2><p class="muted small" style="margin:0">Suman, pero no son indispensables.</p>
+<div class="chips"><span class="chip">Spring Boot <small>Básico</small></span><span class="chip">Git <small>Básico</small></span><a class="chip chip--add" href="#add2">+ Agregar</a></div></section>
+<div class="emp-actions"><a class="btn btn--ghost" href="vacantes.html">Guardar borrador</a><a class="btn" href="vacante-editar-3.html">Continuar</a></div></div></div></div>
+</main>
+
+<footer class="site-footer"><div class="wrap">
+  <img src="../assets/brand/logo-horizontal-blanco.svg" alt="Talenti">
+  <p>Prácticas preprofesionales para estudiantes de institutos del Perú. Prototipo con datos de muestra.</p>
+  <ul aria-label="Información legal">
+    <li><a href="../estudiante/terminos.html">Términos</a></li>
+    <li><a href="../estudiante/privacidad.html">Privacidad</a></li>
+    <li><a href="../estudiante/cookies.html">Cookies</a></li>
+    <li><a href="../estudiante/transparencia.html">Transparencia</a></li>
+    <li><a href="../estudiante/cookies.html#preferencias">Preferencias de cookies</a></li>
+  </ul>
+</div></footer>
+<span class="anchor" id="cerrar"></span>
+<div class="dialog" id="add1" role="dialog" aria-modal="true" aria-labelledby="add1-t"><div class="dialog__panel"><h2 id="add1-t">Agregar requisito obligatorio</h2><div class="form-grid"><div class="field"><label for="add1h">Habilidad</label><input class="input" id="add1h" type="text" value="" placeholder="Por ejemplo, Docker" autocomplete="off"></div><div class="field"><label for="add1n">Nivel</label><select class="select" id="add1n"><option selected>Básico</option><option>Intermedio</option><option>Avanzado</option></select></div></div><div class="dialog__actions"><a class="btn btn--secondary" href="#cerrar">Cancelar</a><a class="btn" href="#cerrar">Agregar</a></div></div></div><div class="dialog" id="add2" role="dialog" aria-modal="true" aria-labelledby="add2-t"><div class="dialog__panel"><h2 id="add2-t">Agregar requisito deseable</h2><div class="form-grid"><div class="field"><label for="add2h">Habilidad</label><input class="input" id="add2h" type="text" value="" placeholder="Por ejemplo, Docker" autocomplete="off"></div><div class="field"><label for="add2n">Nivel</label><select class="select" id="add2n"><option selected>Básico</option><option>Intermedio</option><option>Avanzado</option></select></div></div><div class="dialog__actions"><a class="btn btn--secondary" href="#cerrar">Cancelar</a><a class="btn" href="#cerrar">Agregar</a></div></div></div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Topes de gasto de IA · Talenti (prototipo)</title>
+<link rel="icon" href="../assets/brand/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/css/prototipo.css">
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+
+<div class="proto-bar"><div class="wrap">
+  <div class="proto-bar__info"><span>Prototipo de Talenti</span><span class="proto-bar__face">Cara: Administrador</span><span>Con sesión: Administración Talenti</span></div>
+  <a class="proto-bar__back" href="../index.html">Volver al inicio del prototipo</a>
+</div></div>
+<header class="site-header"><div class="wrap">
+  <a class="logo" href="index.html" aria-label="Talenti, ir al panel"><img src="../assets/brand/logo-horizontal.svg" alt="Talenti"></a>
+  <span class="badge badge--info adm-who" style="margin-left:auto">Administración Talenti</span>
+  <a class="btn btn--secondary btn--sm adm-out" href="../estudiante/index.html">Cerrar sesión</a>
+</div></header>
+<main id="contenido">
+<div class="panel"><nav class="panel__nav" aria-label="Administración"><ul><li><a href="index.html">Panel</a></li><li><a href="usuarios.html">Usuarios</a></li><li><a href="empresas.html">Empresas</a></li><li><a href="vacantes.html">Vacantes</a></li><li><a href="planes.html">Planes</a></li><li><a href="consumo-ia.html" aria-current="page">Consumo de IA</a></li><li><a href="legales.html">Documentos legales</a></li><li><a href="auditoria.html">Auditoría y seguridad</a></li><li><a href="incidencias.html">Incidencias</a></li><li><a href="config.html">Configuración</a></li></ul></nav><div class="panel__content">
+<div class="adm-head"><div><h1>Consumo y costo de IA</h1><p>Topes que protegen el presupuesto.</p></div></div><div class="segmented" role="navigation" aria-label="Vista" style="margin-bottom:var(--space-6);max-width:100%;overflow-x:auto"><a href="consumo-ia.html">Resumen</a><a href="consumo-topes.html" aria-current="page">Topes</a></div>
+<div class="stack-lg">
+  <section class="card stack"><h2>Estado actual</h2>
+    <div class="adm-hbar"><div><span>Tope global por día</span><span>US$ 8,40 de 30</span></div><div class="progress" role="progressbar" aria-label="Tope global por día" aria-valuenow="28" aria-valuemin="0" aria-valuemax="100" style="--p:28"><i></i></div></div>
+    <div class="adm-hbar adm-hbar--warn"><div><span>Tope global por mes</span><span>US$ 216 de 300</span></div><div class="progress" role="progressbar" aria-label="Tope global por mes" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100" style="--p:72"><i></i></div></div>
+    <div class="adm-hbar"><div><span>Tope por persona (mes)</span><span>Máximo usado: US$ 1,10 de 2</span></div><div class="progress" role="progressbar" aria-label="Tope por persona (mes)" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="--p:55"><i></i></div></div></section>
+  <section class="card stack"><h2>Qué pasa al llegar al tope</h2>
+    <p class="muted">La función de IA se pausa con un aviso amable. Las vacantes y postulaciones siguen funcionando.</p></section>
+  <a class="btn" href="#topes">Cambiar topes</a>
+</div></div></div>
+</main>
+
+<footer class="site-footer"><div class="wrap">
+  <img src="../assets/brand/logo-horizontal-blanco.svg" alt="Talenti">
+  <p>Prácticas preprofesionales para estudiantes de institutos del Perú. Prototipo con datos de muestra.</p>
+  <ul aria-label="Información legal">
+    <li><a href="../estudiante/terminos.html">Términos</a></li>
+    <li><a href="../estudiante/privacidad.html">Privacidad</a></li>
+    <li><a href="../estudiante/cookies.html">Cookies</a></li>
+    <li><a href="../estudiante/transparencia.html">Transparencia</a></li>
+    <li><a href="../estudiante/cookies.html#preferencias">Preferencias de cookies</a></li>
+  </ul>
+</div></footer>
+<span class="anchor" id="cerrar"></span>
+<div class="dialog" id="topes" role="dialog" aria-modal="true" aria-labelledby="topes-t"><div class="dialog__panel"><h2 id="topes-t">Cambiar topes</h2><div class="stack"><div class="field"><label for="t1">Tope global por día (US$)</label><input class="input" id="t1" type="text" value="30" autocomplete="off"></div><div class="field"><label for="t2">Tope global por mes (US$)</label><input class="input" id="t2" type="text" value="300" autocomplete="off"></div><div class="field"><label for="t3">Tope por persona al mes (US$)</label><input class="input" id="t3" type="text" value="2" autocomplete="off"></div></div><div class="dialog__actions"><a class="btn btn--secondary" href="#cerrar">Cancelar</a><a class="btn" href="consumo-topes.html">Guardar topes</a></div></div></div>
+</body>
+</html>

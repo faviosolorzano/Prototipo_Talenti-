@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Borrador de Términos 1.3 · Talenti (prototipo)</title>
+<link rel="icon" href="../assets/brand/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/css/prototipo.css">
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+
+<div class="proto-bar"><div class="wrap">
+  <div class="proto-bar__info"><span>Prototipo de Talenti</span><span class="proto-bar__face">Cara: Administrador</span><span>Con sesión: Administración Talenti</span></div>
+  <a class="proto-bar__back" href="../index.html">Volver al inicio del prototipo</a>
+</div></div>
+<header class="site-header"><div class="wrap">
+  <a class="logo" href="index.html" aria-label="Talenti, ir al panel"><img src="../assets/brand/logo-horizontal.svg" alt="Talenti"></a>
+  <span class="badge badge--info adm-who" style="margin-left:auto">Administración Talenti</span>
+  <a class="btn btn--secondary btn--sm adm-out" href="../estudiante/index.html">Cerrar sesión</a>
+</div></header>
+<main id="contenido">
+<div class="panel"><nav class="panel__nav" aria-label="Administración"><ul><li><a href="index.html">Panel</a></li><li><a href="usuarios.html">Usuarios</a></li><li><a href="empresas.html">Empresas</a></li><li><a href="vacantes.html">Vacantes</a></li><li><a href="planes.html">Planes</a></li><li><a href="consumo-ia.html">Consumo de IA</a></li><li><a href="legales.html" aria-current="page">Documentos legales</a></li><li><a href="auditoria.html">Auditoría y seguridad</a></li><li><a href="incidencias.html">Incidencias</a></li><li><a href="config.html">Configuración</a></li></ul></nav><div class="panel__content">
+<div class="adm-head"><div><h1>Documentos legales</h1><p>Borrador pendiente de revisión legal.</p></div></div><div class="segmented" role="navigation" aria-label="Vista" style="margin-bottom:var(--space-6);max-width:100%;overflow-x:auto"><a href="legales.html">Versiones</a><a href="legal-borrador.html" aria-current="page">Borrador</a><a href="legal-aceptaciones.html">Aceptaciones</a></div>
+<div class="stack-lg">
+  <div class="notice notice--warn" role="status"><span class="notice__icon " aria-hidden="true">!</span><div><strong>Pendiente de revisión legal</strong><p>No se publica hasta que una persona abogada lo apruebe. No tiene validez legal.</p></div></div>
+  <section class="card stack"><h2>Qué cambia</h2><ul class="ticks"><li><span class="tick tick--ok" aria-hidden="true">+</span>Aclara que las sesiones con DORA son privadas.</li><li><span class="tick tick--ok" aria-hidden="true">+</span>Explica los topes de uso de IA.</li><li><span class="tick tick--warn" aria-hidden="true">−</span>Quita un párrafo duplicado sobre cookies.</li></ul></section>
+  <a class="btn" href="#revision">Enviar a revisión legal</a>
+</div></div></div>
+</main>
+
+<footer class="site-footer"><div class="wrap">
+  <img src="../assets/brand/logo-horizontal-blanco.svg" alt="Talenti">
+  <p>Prácticas preprofesionales para estudiantes de institutos del Perú. Prototipo con datos de muestra.</p>
+  <ul aria-label="Información legal">
+    <li><a href="../estudiante/terminos.html">Términos</a></li>
+    <li><a href="../estudiante/privacidad.html">Privacidad</a></li>
+    <li><a href="../estudiante/cookies.html">Cookies</a></li>
+    <li><a href="../estudiante/transparencia.html">Transparencia</a></li>
+    <li><a href="../estudiante/cookies.html#preferencias">Preferencias de cookies</a></li>
+  </ul>
+</div></footer>
+<span class="anchor" id="cerrar"></span>
+<div class="dialog" id="revision" role="dialog" aria-modal="true" aria-labelledby="revision-t"><div class="dialog__panel"><h2 id="revision-t">Enviar a revisión legal</h2><p class="muted">Se avisará a la persona abogada. Las personas no verán el cambio hasta aprobarse.</p><div class="dialog__actions"><a class="btn btn--secondary" href="#cerrar">Cancelar</a><a class="btn" href="legales.html">Enviar</a></div></div></div>
+</body>
+</html>

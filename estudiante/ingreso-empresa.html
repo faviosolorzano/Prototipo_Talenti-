@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Iniciar sesión · Talenti (prototipo)</title>
+<link rel="icon" href="../assets/brand/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/css/prototipo.css">
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+
+<div class="proto-bar"><div class="wrap">
+  <div class="proto-bar__info"><span>Prototipo de Talenti</span><span class="proto-bar__face">Cara: Estudiante</span><span>Visitante (sin sesión)</span></div>
+  <a class="proto-bar__back" href="../index.html">Volver al inicio del prototipo</a>
+</div></div>
+<header class="site-header"><div class="wrap">
+  <a class="logo" href="index.html" aria-label="Talenti, ir al inicio"><img src="../assets/brand/logo-horizontal.svg" alt="Talenti"></a>
+  <input class="nav-toggle" type="checkbox" id="menu" aria-label="Abrir el menú"><label class="nav-burger" for="menu">Menú</label>
+  <nav class="site-nav" aria-label="Principal"><a href="index.html" aria-current="page">Inicio</a><a href="oportunidades-publico.html">Oportunidades</a><a href="transparencia.html">Transparencia</a><div class="site-nav__actions"><a class="btn btn--ghost" href="registro.html">Crear cuenta</a><a class="btn btn--secondary" href="ingreso.html">Iniciar sesión</a></div></nav>
+</div></header>
+<main id="contenido" class="main">
+<div class="wrap">
+<div class="auth login">
+  <div class="card stack">
+    <div><h1>Iniciar sesión</h1><p class="muted">Elige cómo entras. En este prototipo no se valida nada.</p></div>
+    <fieldset style="border:0;padding:0;margin:0"><legend class="label" style="font-weight:600;margin-bottom:8px">Ingresar como</legend>
+      <div class="roles"><input type="radio" name="rol" id="rol-est"><label for="rol-est">Estudiante</label><input type="radio" name="rol" id="rol-emp" checked><label for="rol-emp">Empresa</label><input type="radio" name="rol" id="rol-adm"><label for="rol-adm">Administrador</label></div></fieldset>
+    <div class="form-grid">
+      <div class="field"><label for="correo">Correo</label><input class="input" id="correo" type="email" value="rrhh@andestech.example" autocomplete="off"></div>
+      <div class="field"><label for="clave">Contraseña</label><input class="input" id="clave" type="password" value="muestra-123" autocomplete="off"></div>
+    </div>
+    <div>
+      <a class="btn btn--block go go-est" href="inicio.html">Ingresar como estudiante</a>
+      <a class="btn btn--block go go-emp" href="../empresa/index.html">Ingresar como empresa</a>
+      <a class="btn btn--block go go-adm" href="../admin/index.html">Ingresar como administrador</a>
+    </div>
+    <p class="small center" style="margin:0"><a href="ingreso-ayuda.html">Olvidé mi contraseña</a></p>
+    <p class="small muted center" style="margin:0">¿Eres estudiante y no tienes cuenta? <a href="registro.html">Crear cuenta</a><br>¿Eres empresa? <a href="registro-empresa.html">Solicita el alta</a></p>
+  </div>
+  <aside class="auth__aside"><h2>Bienvenida y bienvenido</h2><p>Talenti conecta a estudiantes de institutos con prácticas preprofesionales.</p></aside>
+</div></div>
+</main>
+
+<footer class="site-footer"><div class="wrap">
+  <img src="../assets/brand/logo-horizontal-blanco.svg" alt="Talenti">
+  <p>Prácticas preprofesionales para estudiantes de institutos del Perú. Prototipo con datos de muestra.</p>
+  <ul aria-label="Información legal">
+    <li><a href="../estudiante/terminos.html">Términos</a></li>
+    <li><a href="../estudiante/privacidad.html">Privacidad</a></li>
+    <li><a href="../estudiante/cookies.html">Cookies</a></li>
+    <li><a href="../estudiante/transparencia.html">Transparencia</a></li>
+    <li><a href="../estudiante/cookies.html#preferencias">Preferencias de cookies</a></li>
+  </ul>
+</div></footer>
+<span class="anchor" id="cerrar"></span>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Crear cuenta · Talenti (prototipo)</title>
+<link rel="icon" href="../assets/brand/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/css/prototipo.css">
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+
+<div class="proto-bar"><div class="wrap">
+  <div class="proto-bar__info"><span>Prototipo de Talenti</span><span class="proto-bar__face">Cara: Estudiante</span><span>Visitante (sin sesión)</span></div>
+  <a class="proto-bar__back" href="../index.html">Volver al inicio del prototipo</a>
+</div></div>
+<header class="site-header"><div class="wrap">
+  <a class="logo" href="index.html" aria-label="Talenti, ir al inicio"><img src="../assets/brand/logo-horizontal.svg" alt="Talenti"></a>
+  <input class="nav-toggle" type="checkbox" id="menu" aria-label="Abrir el menú"><label class="nav-burger" for="menu">Menú</label>
+  <nav class="site-nav" aria-label="Principal"><a href="index.html" aria-current="page">Inicio</a><a href="oportunidades-publico.html">Oportunidades</a><a href="transparencia.html">Transparencia</a><div class="site-nav__actions"><a class="btn btn--ghost" href="registro.html">Crear cuenta</a><a class="btn btn--secondary" href="ingreso.html">Iniciar sesión</a></div></nav>
+</div></header>
+<main id="contenido" class="main">
+<div class="wrap">
+<div class="auth">
+  <div class="card stack">
+    <div><h1>Crea tu cuenta</h1><p class="muted">Tarda un minuto. Es gratis para estudiantes.</p></div>
+    <form class="form-grid" action="inicio.html">
+      <div class="field"><label for="nombre">Nombre completo</label><input class="input" id="nombre" type="text" value="" placeholder="Ej. Camila Rojas Quispe" autocomplete="off"></div>
+      <div class="field"><label for="correo">Correo</label><input class="input" id="correo" type="email" value="" placeholder="tucorreo@ejemplo.pe" autocomplete="off"></div>
+      <div class="field"><label for="clave">Contraseña</label><input class="input" id="clave" type="password" value="" aria-describedby="clave-m" autocomplete="off"><span class="hint" id="clave-m">Mínimo 10 caracteres.</span></div>
+      <div class="stack">
+        <label class="check"><input type="checkbox" id="acepto" checked><span>Acepto los <a href="terminos.html">Términos</a> y la <a href="privacidad.html">Política de privacidad</a>.</span></label>
+        <label class="check"><input type="checkbox" id="consiento" checked><span>Autorizo el tratamiento de mis datos para recibir recomendaciones de vacantes. Puedo retirarlo cuando quiera. <a href="mi-privacidad-info.html">Qué datos usamos</a></span></label>
+      </div>
+      <button class="btn btn--block" type="submit">Crear cuenta</button>
+    </form>
+    <p class="small muted center" style="margin:0">¿Ya tienes cuenta? <a href="ingreso.html">Iniciar sesión</a></p>
+  </div>
+  <aside class="auth__aside"><h2>Lo que obtienes</h2><ul><li>Vacantes con tu porcentaje de compatibilidad</li><li>Práctica privada con DORA (IA)</li><li>Seguimiento de tus postulaciones</li></ul><p>No pedimos tu DNI ni datos que no necesitemos.</p></aside>
+</div></div>
+</main>
+
+<footer class="site-footer"><div class="wrap">
+  <img src="../assets/brand/logo-horizontal-blanco.svg" alt="Talenti">
+  <p>Prácticas preprofesionales para estudiantes de institutos del Perú. Prototipo con datos de muestra.</p>
+  <ul aria-label="Información legal">
+    <li><a href="../estudiante/terminos.html">Términos</a></li>
+    <li><a href="../estudiante/privacidad.html">Privacidad</a></li>
+    <li><a href="../estudiante/cookies.html">Cookies</a></li>
+    <li><a href="../estudiante/transparencia.html">Transparencia</a></li>
+    <li><a href="../estudiante/cookies.html#preferencias">Preferencias de cookies</a></li>
+  </ul>
+</div></footer>
+<span class="anchor" id="cerrar"></span>
+
+</body>
+</html>
